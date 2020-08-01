@@ -10,7 +10,7 @@ body {
 h1 {
   font-family: "Poppins";
   color: #43515c;
-  font-size: 3em;
+  font-size: 1.5em;
   font-weight: lighter;
   letter-spacing: 10px;
   padding: 50px 0px 0px 0px;
@@ -20,14 +20,19 @@ h1 {
 p {
   font-family: "Poppins";
   color: #43515c;
-  font-size: 24px;
+  font-size: 1em;
   font-weight: 100;
   z-index: 999;
 }
 
+img {
+  max-width: 100%;
+}
+/* First section 
+==============================*/
 .first-section {
   width: 100%;
-  height: 150vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -38,6 +43,13 @@ p {
 .first-section .images-wrapper {
   position: absolute;
 }
+.section_1_bg {
+  transform: translateY(70%);
+  height: 60vh;
+  width: 60vh;
+  border-radius: 50%;
+  object-fit: cover;
+}
 
 .ingredient-images {
   position: absolute;
@@ -46,61 +58,64 @@ p {
   height: 530px;
   top: 420px;
 }
-
+.ingredient-images img {
+  max-width: 40px;
+}
 .section_1_01 {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 5px;
+  right: 5px;
 }
 
 .section_1_02 {
   position: absolute;
-  top: 80px;
-  right: 130px;
+  top: 40px;
+  right: 65px;
 }
 
 .section_1_03 {
   position: absolute;
-  top: 100px;
-  right: 10px;
+  top: 50px;
+  right: 5px;
 }
 
 .section_1_04 {
   position: absolute;
-  top: 200px;
-  right: 120px;
+  top: 100px;
+  right: 60px;
 }
 
 .section_1_05 {
   position: absolute;
-  top: 225px;
-  right: 150px;
+  top: 114px;
+  right: 75px;
 }
 
 .section_1_06 {
   position: absolute;
-  top: 170px;
-  right: 210px;
+  top: 75px;
+  right: 105px;
 }
 
 .section_1_07 {
   position: absolute;
-  top: 250px;
-  right: 10px;
+  top: 125px;
+  right: 5px;
 }
 
 .section_1_08 {
   position: absolute;
-  top: 320px;
-  right: 110px;
+  top: 160px;
+  right: 55px;
 }
 
 .section_1_09 {
   position: absolute;
-  top: 370px;
-  right: 10px;
+  top: 185px;
+  right: 5px;
 }
-
+/* Second section 
+==============================*/
 .second-section {
   width: 100%;
   height: 100vh;
@@ -123,7 +138,14 @@ p {
   overflow: hidden;
   height: 100%;
 }
+.top,
+.bottom {
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
 
+/* Third section 
+==============================*/
 .third-section {
   width: 100%;
   height: 150vh;
@@ -144,7 +166,13 @@ p {
 .third-section .images-wrapper img {
   position: absolute;
 }
+.third-section h1,
+.third-section p {
+  color: #fff;
+}
 
+/* Forth section 
+==============================*/
 .forth-section {
   width: 100%;
   height: 150vh;
@@ -164,3 +192,188 @@ p {
 .forth-section .images-wrapper img {
   position: absolute;
 }
+.forth-section img {
+  width: 100%;
+}
+.forth-section .images-wrapper img {
+  margin-top: 15%;
+}
+/* Responsiveness 
+==============================*/
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-family: "Poppins";
+    color: #43515c;
+    font-size: 3em;
+    font-weight: lighter;
+    letter-spacing: 10px;
+    padding: 50px 0px 0px 0px;
+    z-index: 999;
+  }
+
+  p {
+    font-family: "Poppins";
+    color: #43515c;
+    font-size: 24px;
+    font-weight: 100;
+    z-index: 999;
+  }
+  .first-section {
+    width: 100%;
+    height: 150vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+  }
+  .section_1_bg {
+    transform: translateY(20%);
+    height: 120vh;
+  }
+  .ingredient-images {
+    position: absolute;
+    width: 400px;
+    left: calc(50% - 400px);
+    height: 530px;
+    top: 420px;
+  }
+  .ingredient-images img {
+    max-width: 50%;
+    width: 80px;
+  }
+  .section_1_01 {
+    position: absolute;
+    top: 45px;
+    right: 0px;
+  }
+
+  .section_1_02 {
+    position: absolute;
+    top: 80px;
+    right: 80px;
+  }
+
+  .section_1_03 {
+    position: absolute;
+    top: 120px;
+    right: 10px;
+  }
+
+  .section_1_04 {
+    position: absolute;
+    top: 190px;
+    right: 60px;
+  }
+
+  .section_1_05 {
+    position: absolute;
+    top: 250px;
+    right: 80px;
+  }
+
+  .section_1_06 {
+    position: absolute;
+    top: 140px;
+    right: 125px;
+  }
+
+  .section_1_07 {
+    position: absolute;
+    top: 250px;
+    right: 10px;
+  }
+
+  .section_1_08 {
+    position: absolute;
+    top: 330px;
+    right: 60px;
+  }
+
+  .section_1_09 {
+    position: absolute;
+    top: 370px;
+    right: 10px;
+  }
+  .forth-section img {
+    width: 50%;
+  }
+  .forth-section .images-wrapper img {
+    margin-top: 0%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .section_1_bg {
+    transform: translateY(0%);
+    height: 125vh;
+  }
+  .ingredient-images img {
+    width: 100px;
+  }
+  .section_1_01 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+  .section_1_02 {
+    position: absolute;
+    top: 80px;
+    right: 130px;
+  }
+
+  .section_1_03 {
+    position: absolute;
+    top: 100px;
+    right: 10px;
+  }
+
+  .section_1_04 {
+    position: absolute;
+    top: 200px;
+    right: 120px;
+  }
+
+  .section_1_05 {
+    position: absolute;
+    top: 225px;
+    right: 150px;
+  }
+
+  .section_1_06 {
+    position: absolute;
+    top: 170px;
+    right: 210px;
+  }
+
+  .section_1_07 {
+    position: absolute;
+    top: 250px;
+    right: 10px;
+  }
+
+  .section_1_08 {
+    position: absolute;
+    top: 320px;
+    right: 110px;
+  }
+
+  .section_1_09 {
+    position: absolute;
+    top: 370px;
+    right: 10px;
+  }
+}
+/*@media only screen and (min-width: 768px) {
+  .section_1_bg {
+    transform: translateY(0%);
+    height: 125vh;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .section_1_bg {
+    transform: translateY(0%);
+    height: 125vh;
+  }
+} */
