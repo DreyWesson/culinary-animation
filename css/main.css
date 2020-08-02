@@ -154,6 +154,7 @@ img {
   flex-direction: column;
   text-align: center;
   position: relative;
+  background: rgb(23, 27, 30);
 }
 
 .third-section .images-wrapper {
